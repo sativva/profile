@@ -70,9 +70,14 @@ div {
   box-shadow: 2px 2px 3px grey;
 }
 
+ul {
+  list-style: none;
+  padding-left:0;
+}
+
 li {
   list-style: none;
-  padding-left: 0;
+  padding-left:0;
 }
 .listofmovies li {
   margin: 50px;
