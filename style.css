@@ -19,8 +19,22 @@ a {
 }
 a:hover {
   color: #F2BF97;
+  font-color:#92A2A8;
 }
+#page-content {
 
+}
+#sidebar {
+  padding-top: 20;
+  position: fixed;
+  width: 80px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color:#2D4059;
+  font-size: 25;
+  font-weight: 45;
+}
 #photoprofile {
   width: 160px;
   height: 160px;
@@ -53,6 +67,7 @@ div {
   background-color: white;
   padding: 20px;
   margin: 20px;
+  box-shadow: 2px 2px 3px grey;
 }
 
 li {
