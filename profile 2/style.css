@@ -1,0 +1,127 @@
+body {
+  background-color: #B4DFF0;
+  font-family: Open Sans;
+  color: #4C4C4C;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: Lato;
+}
+
+a {
+  color: #73A2B1;
+  text-decoration: none;
+}
+a:hover {
+  color: #F2BF97;
+  font-color:#92A2A8;
+}
+#page-content {
+  padding-left: 80;
+}
+
+.right {
+ overflow-x: auto;
+
+}
+
+.left {
+  position: left;
+  float: left;
+  clear: right;
+  overflow: auto;
+}
+
+#bottom {
+  position: bottom;
+  float: both;
+  clear: both;
+  overflow: auto;
+}
+
+.container {
+  background-color: #87BCD5;
+  height: inherit;
+  float: right;
+}
+#sidebar {
+  padding-top: 20;
+  position: fixed;
+  width: 80px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color:#2D4059;
+  font-size: 25;
+  font-weight: 45;
+}
+#photoprofile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+div {
+  /*width: 550px;*/
+  margin: auto;
+}
+
+.bluebutton {
+  border-width: 26px;
+  border: solid;
+  border-color: #73A2B1;
+  border-radius: 5%;
+  color: white;
+  background-color: #73A2B1;
+  padding: 8px 8px;
+}
+
+.bluebutton:hover {
+  border-width: 3px;
+  border: solid;
+  border-color: #F2BF97;
+  border-radius: 5%;
+  color: white;
+  background-color: #F2BF97;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 3px grey;
+}
+.float {
+
+}
+
+ul {
+  list-style: none;
+  padding-left:0;
+}
+
+li {
+  list-style: none;
+  padding-left:0;
+}
+.listofmovies li {
+  margin: 50px;
+  width: auto;
+  height: auto;
+
+}
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 22px;
+}
+
+.textjustify {
+ text-align: justify;
+}
+img {
+  margin: 16px;
+}
