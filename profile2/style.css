@@ -6,6 +6,11 @@ body {
   line-height: 23px;
   text-align: center;
 }
+hr {
+  border: solid;
+  color: black;
+}
+
 
 h1, h2, h3 {
   font-size: 22px;
@@ -25,6 +30,12 @@ a:hover {
   padding-left: 80;
 }
 
+.container {
+  background-color: #87BCD5;
+  height: inherit;
+  float: right;
+}
+
 .right {
  overflow-x: auto;
 
@@ -35,6 +46,11 @@ a:hover {
   float: left;
   clear: right;
   overflow: auto;
+  max-width: 500px;
+}
+
+#left-bottom {
+  height: 445px;
 }
 
 #bottom {
@@ -44,11 +60,6 @@ a:hover {
   overflow: auto;
 }
 
-.container {
-  background-color: #87BCD5;
-  height: inherit;
-  float: right;
-}
 #sidebar {
   padding-top: 20;
   position: fixed;
@@ -122,6 +133,11 @@ li {
 .textjustify {
  text-align: justify;
 }
+
 img {
+  width: 200px;
+  height: 160px;
   margin: 16px;
+  margin-top: 71px;
+  object-fit: cover;
 }
