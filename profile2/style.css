@@ -27,6 +27,8 @@ a:hover {
   font-color:#92A2A8;
 }
 
+
+
 @media (max-width: 768px) {
   #sidebar {
   padding-top: 20;
@@ -47,6 +49,7 @@ a:hover {
   padding-left: 0;
   }
 }
+
 
 @media (min-width: 768px){
   #sidebar {
@@ -84,7 +87,7 @@ a:hover {
 }
 
 #left-bottom {
-  height: 445px;
+
 }
 
 #bottom {
@@ -100,10 +103,8 @@ a:hover {
   height: 160px;
   border-radius: 50%;
 }
-div {
-  /*width: 550px;*/
-  margin: auto;
-}
+
+
 
 .bluebutton {
   border-width: 26px;
