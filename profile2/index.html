@@ -1,6 +1,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -8,71 +10,82 @@
   </head>
   <body>
     <div id="sidebar">
-      <a href="https://fr.linkedin.com/in/thomas-rondio-a81b24b8" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br><br>
-      <a href="https://github.com/sativva" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><br><br>
-      <a href="mailto:t.rondio@free.fr"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><br><br>
-      <a href="images/cv.pdf" target="_blank"><i class="fa fa-file-text" aria-hidden="true"></i></a><br><br>
-      <a href="https://www.facebook.com/thomas.rondio" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><br><br>
-      <a href="tel:+33649840679" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a><br><br>
+      <a class="social-link" href="https://fr.linkedin.com/in/thomas-rondio-a81b24b8" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br><br>
+      <a class="social-link" href="https://github.com/sativva" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><br><br>
+      <a class="social-link" href="mailto:t.rondio@free.fr"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><br><br>
+      <a class="social-link" href="images/cv.pdf" target="_blank"><i class="fa fa-file-text" aria-hidden="true"></i></a><br><br>
+      <a class="social-link" href="https://www.facebook.com/thomas.rondio" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><br><br>
+      <a class="social-link" href="tel:+33649840679" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a><br><br>
     </div>
     <div id="page-content">
       <div class="container">
-        <div class="left">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="">
 
-          <!-- card name -->
-          <div class="card">
-            <img src="images/thomas2.jpg" alt="Thomas Rondio" id="photoprofile">
-            <h1>Thomas Rondio</h1>
-            <h3>Web Developpeur | Web Designer</h2>
-            <p></p>
+              <!-- card name -->
+              <div class="card">
+                <img src="images/thomas2.jpg" alt="Thomas Rondio" id="photoprofile">
+                <h1>Thomas Rondio</h1>
+                <h3>Web Developpeur | Web Designer</h2>
+                <p></p>
+              </div>
+
+              <!-- card life -->
+              <div class="card" id="left-bottom">
+                <p>Un parcours atypique. Des études de cinéma, des courts-métrage, puis des clips, beaucoup de publicités, quelques longs métrages. Carole Bouquet, Wim Wenders, Zinédine Zidane, Tahar Rahim et Bruno Solo.</p>
+                <p>Un revirement. Bar, fête, alcool, concerts, Dj set, cocktails, lotos.</p>
+                <p>Encore un revirement. Ecole, formation : Le Wagon.</p>
+                <p>Et maintenant les projets. Les tiens, les miens et ceux des autres.</p>
+              </div>
+            </div>
           </div>
-
-          <!-- card life -->
-          <div class="card" id="left-bottom">
-            <p>Un parcours atypique. Des études de cinéma, des courts-métrage, puis des clips, beaucoup de publicités, quelques longs métrages. Carole Bouquet, Wim Wenders, Zinédine Zidane, Tahar Rahim et Bruno Solo.</p>
-            <p>Un revirement. Bar, fête, alcool, concerts, Dj set, cocktails, lotos.</p>
-            <p>Encore un revirement. Ecole, formation : Le Wagon.</p>
-            <p>Et maintenant les projets. Les tiens, les miens et ceux des autres.</p>
-          </div>
-        </div>
-
         <!-- card exp -->
-        <div class="card right">
-          <h2>Dernièrement</h2>
-          <table>
-            <ul class="listofmovies">
-              <tr>
-                <li>
-                  <td><a href="http://www.weclap.co" target="_blank"><img src="images/clap.png" alt="Clap"></a></td>
-                  <td><br><h3><a href="http://www.weclap.co">We Clap</a></h3>
-                  <p class="textjustify">We Clap, c'est un site qui aide à gérer tes envies de cinéma. C'est notre projet de fin d'étude du wagon, et nous continuons à travailler pour offrir une webapp au top d'ici quelques semaines. C'est aussi un bot messenger, comprends une app conversationnelle, avec les fonctionalités du site.</p></td>
-                </li>
-              </tr>
-              <br>
 
-              <br>
-              <tr>
-                <li>
-                  <td><a href="http://www.labrigout.fr" target="_blank"><img src="images/brigout.png" alt="La Brigout"></a></td>
-                  <td><br><h3><a href="http://www.labrigout.fr">La Brigout</a></h3>
-                  <p class="textjustify">La Brigout c'est un très bon resto dans le 2e rue d'Argout. C'est aussi, une landing page très jolie, conçue par mes soins.</p></td>
-                </li>
-              </tr>
+        <div class="col-xs-12 col-sm-6">
+          <div class="card">
+            <h2>Dernièrement</h2>
+            <table>
+              <ul class="listofmovies">
+                <tr>
+                  <li>
+                    <td class="hidden-xs"><a href="http://www.weclap.co" target="_blank" "><img src="images/clap.png"  alt="Clap"></a></td>
+                    <td><br><h3><a href="http://www.weclap.co">We Clap</a></h3>
+                    <p class="textjustify">We Clap, c'est un site qui aide à gérer tes envies de cinéma. C'est notre projet de fin d'étude du wagon, et nous continuons à travailler pour offrir une webapp au top d'ici quelques semaines. C'est aussi un bot messenger, comprends une app conversationnelle, avec les fonctionalités du site.</p></td>
+                  </li>
+                </tr>
+                <br>
 
-              <tr>
-                <li>
-                  <td><a href="http://www.lewagon.com" target="_blank"><img src="images/wagon.png" alt="Le Wagon"></a></td>
-                  <td><br><h3><a href="http://www.lewagon.com">Le Wagon</a></h3>
-                  <p class="textjustify">Le Wagon, c'est un bootcamp de developpement web. On nous a appris en 9 semaines, à coder en ruby on rails. Grace à cette formation, je suis un as du front design, et je suis cap de faire une belle application web avec gestion d'utilisateurs, d'admin, de paiement, etc ...</p></td>
-                </li>
-              </tr>
-            </ul>
-          </table>
+                <br>
+                <tr>
+                  <li>
+                    <td class="hidden-xs" ><a href="http://www.labrigout.fr" target="_blank"><img src="images/brigout.png" alt="La Brigout"></a></td>
+                    <td><br><h3><a href="http://www.labrigout.fr">La Brigout</a></h3>
+                    <p class="textjustify">La Brigout c'est un très bon resto dans le 2e rue d'Argout. C'est aussi, une landing page très jolie, conçue par mes soins.</p></td>
+                  </li>
+                </tr>
+
+                <tr>
+                  <li>
+                    <td class="hidden-xs"><a href="http://www.lewagon.com" target="_blank"><img src="images/wagon.png" alt="Le Wagon"></a></td>
+                    <td><br><h3><a href="http://www.lewagon.com">Le Wagon</a></h3>
+                    <p class="textjustify">Le Wagon, c'est un bootcamp de developpement web. On nous a appris en 9 semaines, à coder en ruby on rails. Grace à cette formation, je suis un as du front design, et je suis cap de faire une belle application web avec gestion d'utilisateurs, d'admin, de paiement, etc ...</p></td>
+                  </li>
+                </tr>
+              </ul>
+            </table>
+          </div>
         </div>
-        <div class="card" id="bottom">
-          <h2>A propos de moi</h2>
-          <p>Mes centres d'intérêts : restauration, cyclisme, economie de partage, immobilier, entrepreneuriat, arts, cinéma, voyage, mixologie, écologie.</p>
         </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="card" id="bottom">
+              <h2>A propos de moi</h2>
+              <p>Mes centres d'intérêts : restauration, cyclisme, economie de partage, immobilier, entrepreneuriat, arts, cinéma, voyage, mixologie, écologie.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </body>

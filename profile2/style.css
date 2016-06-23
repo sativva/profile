@@ -26,14 +26,48 @@ a:hover {
   color: #F2BF97;
   font-color:#92A2A8;
 }
-#page-content {
-  padding-left: 80;
+
+@media (max-width: 768px) {
+  #sidebar {
+  padding-top: 20;
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color:#2D4059;
+  font-size: 25;
+  font-weight: 45;
+  }
+  .social-link {
+    flex: 0 0 15%;
+  }
+  #page-content {
+  padding-left: 0;
+  }
+}
+
+@media (min-width: 768px){
+  #sidebar {
+  padding-top: 20;
+  position: fixed;
+  width: 80px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color:#2D4059;
+  font-size: 25;
+  font-weight: 45;
+  }
+  #page-content {
+    padding-left: 80;
+  }
 }
 
 .container {
   background-color: #87BCD5;
   height: inherit;
-  float: right;
 }
 
 .right {
@@ -60,17 +94,7 @@ a:hover {
   overflow: auto;
 }
 
-#sidebar {
-  padding-top: 20;
-  position: fixed;
-  width: 80px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-color:#2D4059;
-  font-size: 25;
-  font-weight: 45;
-}
+
 #photoprofile {
   width: 160px;
   height: 160px;
@@ -102,11 +126,15 @@ div {
 .card {
   background-color: white;
   padding: 20px;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
   box-shadow: 2px 2px 3px grey;
 }
 .float {
 
+}
+div {
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -135,6 +163,7 @@ li {
 }
 
 img {
+
   width: 200px;
   height: 160px;
   margin: 16px;
