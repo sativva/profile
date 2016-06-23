@@ -6,6 +6,11 @@ body {
   line-height: 23px;
   text-align: center;
 }
+hr {
+  border: solid;
+  color: black;
+}
+
 
 h1, h2, h3 {
   font-size: 22px;
@@ -21,10 +26,33 @@ a:hover {
   color: #F2BF97;
   font-color:#92A2A8;
 }
-#page-content {
 
+
+
+@media (max-width: 768px) {
+  #sidebar {
+  padding-top: 20;
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color:#2D4059;
+  font-size: 25;
+  font-weight: 45;
+  }
+  .social-link {
+    flex: 0 0 15%;
+  }
+  #page-content {
+  padding-left: 0;
+  }
 }
-#sidebar {
+
+
+@media (min-width: 768px){
+  #sidebar {
   padding-top: 20;
   position: fixed;
   width: 80px;
@@ -34,16 +62,49 @@ a:hover {
   background-color:#2D4059;
   font-size: 25;
   font-weight: 45;
+  }
+  #page-content {
+    padding-left: 80;
+  }
 }
+
+.container {
+  background-color: #87BCD5;
+  height: inherit;
+}
+
+.right {
+ overflow-x: auto;
+
+}
+
+.left {
+  position: left;
+  float: left;
+  clear: right;
+  overflow: auto;
+  max-width: 500px;
+}
+
+#left-bottom {
+
+}
+
+#bottom {
+  position: bottom;
+  float: both;
+  clear: both;
+  overflow: auto;
+}
+
+
 #photoprofile {
   width: 160px;
   height: 160px;
   border-radius: 50%;
 }
-div {
-  width: 550px;
-  margin: auto;
-}
+
+
 
 .bluebutton {
   border-width: 26px;
@@ -66,8 +127,15 @@ div {
 .card {
   background-color: white;
   padding: 20px;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
   box-shadow: 2px 2px 3px grey;
+}
+.float {
+
+}
+div {
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -81,6 +149,8 @@ li {
 }
 .listofmovies li {
   margin: 50px;
+  width: auto;
+  height: auto;
 
 }
 .list-inline > li {
@@ -92,6 +162,12 @@ li {
 .textjustify {
  text-align: justify;
 }
+
 img {
+
+  width: 200px;
+  height: 160px;
   margin: 16px;
+  margin-top: 71px;
+  object-fit: cover;
 }
